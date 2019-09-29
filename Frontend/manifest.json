@@ -1,0 +1,34 @@
+{
+	"name": "ToRelevant",
+	"version": "1.0",
+	"manifest_version": 2,
+	"description": "(ToRelevant) Open each google search result(link) to the part of page that shows the snippet",
+	"content_scripts": [
+			{
+					"matches": [
+						"*://*/*" 
+						// "*://*.pdf"
+					],
+					"js": ["js/jquery-2.1.3.min.js", "js/snippet.js", "js/history.js"],
+					"css": ["css/highlight.css"],
+					"run_at": "document_end"
+			}
+	],
+	"browser_action": {
+		// "default_popup": "popup.html",
+		"default_title": "ToRelevant"
+	},
+	"background": {
+		"scripts": ["js/background.js"]
+	},
+	"permissions": [
+		"tabs", 
+		"activeTab", 
+		"notifications",
+        "http://*/",
+        "https://*/",
+        "history",
+        "http://127.0.0.1:5000/*",
+        "webRequest"
+    ]
+}
