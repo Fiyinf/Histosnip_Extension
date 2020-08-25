@@ -11,9 +11,12 @@ Extension records and groups browse history by topic/webpage content.
 Framework is the chrome extension API as the frontend and the backend is the Python Flask SQLAlchemy framework.
 
 To run backend:
+
 #Start up server with flask shell
+
 #Run with flask run
 
 
 To install the frontend extension to your computer:
+
 https://webkul.com/blog/how-to-install-the-unpacked-extension-in-chrome/
